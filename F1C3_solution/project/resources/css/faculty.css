@@ -1,0 +1,74 @@
+/* Faculty Header */
+
+#faculty-header {
+  justify-content: flex-end;
+  border-bottom: 10px solid #8a54ff;
+  background-image: url('../images/faculty-photo.png');
+}
+
+#faculty-header .content {
+  flex: 0 0 50%;
+  margin-top: 9rem;
+  text-align: center;
+}
+
+#faculty-header .header-image-section p {
+  color: #999999;
+}
+
+/* Faculty List */
+
+#faculty-list {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  max-width: 1079px;
+  padding: 5.625rem 7.5rem 11.25rem 7.5rem;
+}
+
+.faculty-member {
+  flex: 0 0 16.875rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6.25rem;
+}
+
+.faculty-member .image-container {
+  margin-bottom: 1.25rem;
+}
+
+.faculty-member h3 {
+  padding-bottom: .625rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #8a54ff;
+}
+
+.faculty-member .role {
+  padding-bottom: .625rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.faculty-member .motto {
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 695px) {
+  #faculty-list {
+    padding-bottom: .6875rem;
+  }
+
+  .faculty-member h3 {
+    font-size: 1.5rem;
+  }
+
+  .faculty-member .role {
+    font-size: 1rem;
+  }
+
+  .faculty-member .motto {
+    font-size: .875rem;
+    line-height: 1.7;
+  }
+}
